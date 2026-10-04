@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap');
+
+:root {
+    --main-color: #ff6b81;
+    --bg-dark: #222;
+    --card-bg: #333;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--bg-dark);
+    color: #fff;
+}
+
+section{
+    padding:2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.heading span{
+    color:var(--main-color);
+    text-transform: uppercase;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    background: #666;
+    color:#fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn:hover{
+    background:var(--main-color);
+}
+
+.header{
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 10000;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 9%;
+}
+
+.header .logo{
+    font-weight: bolder;
+    color:#fff;
+    font-size: 2.5rem;
+}
+
+.header .logo span{
+    color:var(--main-color);
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color:#fff;
+    margin-left: 2rem;
+}
+
+.header .navbar a:hover{
+    color:var(--main-color);
+}
+
+#menu-bars{
+    font-size: 3rem;
+    color:#fff;
+    cursor: pointer;
+    display: none;
+}
+
+.home .content{
+    text-align: center;
+    padding-top: 6rem;
+    margin:2rem auto;
+    max-width: 70rem;
+}
+
+.home .content h3{
+    color:#fff;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+}
+
+.home .content h3 span{
+    color:var(--main-color);
+    text-transform: uppercase;
+}
+
+.home .content p {
+    font-size: 1.6rem;
+    color: #eee;
+    padding: 1rem 0;
+    text-transform: none;
+}
+
+.home .home-slider {
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.home .home-slider .swiper-slide{
+    overflow: hidden;
+    border-radius: .5rem;
+    height: 40rem;
+    width: 30rem;
+}
+
+.home .home-slider .swiper-slide img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.service .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.service .box-container .box{
+    border-radius: .5rem;
+    background: var(--card-bg);
+    text-align: left;
+    padding:2.5rem;
+}
+
+.service .box-container .box i.service-icon{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    background:var(--main-color);
+    color:#fff;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.service .box-container .box h3{
+    font-size: 2.2rem;
+    color:#fff;
+    padding:1rem 0;
+}
+
+.service .box-container .box p{
+    font-size: 1.4rem;
+    color:#eee;
+    line-height: 1.8;
+    text-transform: none;
+    margin-bottom: 1rem;
+}
+
+.service-list {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.service-list li {
+    font-size: 1.4rem;
+    color: #ddd;
+    padding: 0.5rem 0;
+    text-transform: none;
+}
+
+.service-list li i {
+    color: var(--main-color);
+    margin-right: 0.8rem;
+}
+
+.calendar-section {
+    background: #1a1a1a;
+}
+
+.calendar-desc {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #aaa;
+    margin-bottom: 2rem;
+    text-transform: none;
+}
+
+.calendar-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.calendar-header h2 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.calendar-header button {
+    background: var(--main-color);
+    color: #fff;
+    padding: 0.8rem 1.2rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.days-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    text-align: center;
+}
+
+.day-cell {
+    background: #222;
+    padding: 1.2rem 0;
+    font-size: 1.4rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.day-cell.available {
+    border: 2px solid #2ed573;
+    color: #2ed573;
+}
+
+.day-cell.booked {
+    background: #ff4757;
+    color: #fff;
+    cursor: not-allowed;
+}
+
+.calendar-legend {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.3rem;
+}
+
+.calendar-legend .text-success { color: #2ed573; }
+.calendar-legend .text-danger { color: #ff4757; }
+
+.price .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap:1.5rem;
+}
+
+.price .box-container .box{
+    padding:2rem 0;
+    background:var(--card-bg);
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.price .box-container .box .title{
+    background:var(--main-color);
+    color:#fff;
+    padding:1.5rem 0;
+    font-size: 2rem;
+}
+
+.price .box-container .box .amount{
+    color:#fff;
+    padding-top: 2rem;
+    font-size: 3.5rem;
+}
+
+.price .box-container .box ul{
+    list-style-type: none;
+    padding:1rem 2rem;
+    text-align: left;
+}
+
+.price .box-container .box ul li{
+    font-size: 1.5rem;
+    color:#eee;
+    padding:1rem 0;
+    text-transform: none;
+}
+
+.price .box-container .box ul li i{
+    color:var(--main-color);
+    padding-right: .5rem;
+}
+
+.booking-section {
+    background: #1a1a1a;
+}
+
+.booking-form {
+    max-width: 70rem;
+    margin: 1rem auto;
+}
+
+.booking-form .inputBox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    width: 100%;
+    background: var(--card-bg);
+    border-radius: .5rem;
+    padding: 1.2rem;
+    margin: .7rem 0;
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: none;
+}
+
+.booking-form .inputBox input,
+.booking-form .inputBox select {
+    width: 49%;
+}
+
+.booking-form textarea {
+    resize: none;
+}
+
+.payment-info-box {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: .5rem;
+    margin: 1rem 0;
+    border-left: 4px solid var(--main-color);
+    text-align: left;
+}
+
+.payment-info-box h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.payment-info-box p {
+    font-size: 1.4rem;
+    color: #aaa;
+    text-transform: none;
+    margin-bottom: 1rem;
+}
+
+.bank-details p {
+    font-size: 1.4rem;
+    color: #eee;
+    margin: 0.3rem 0;
+    text-transform: none;
+}
+
+.qris-box {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background: #222;
+    border-radius: .5rem;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #aaa;
+}
+
+.qris-box i {
+    font-size: 3.5rem;
+    color: var(--main-color);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.reivew .box{
+    border-radius: .5rem;
+    background: var(--card-bg);
+    padding:2rem;
+    position: relative;
+}
+
+.reivew .box .fa-quote-right{
+    position: absolute;
+    top:2rem; right: 2rem;
+    color:var(--main-color);
+    font-size: 5rem;
+}
+
+.reivew .box .user{
+    display: flex;
+    align-items: center;
+    gap:1.5rem;
+    padding-bottom: 1rem;
+}
+
+.reivew .box .user img{
+    height:7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reivew .box .user h3{
+    font-size: 2rem;
+    color:#fff;
+}
+
+.reivew .box .user span{
+    font-size: 1.5rem;
+    color: #aaa;
+    text-transform: none;
+}
+
+.reivew .box p{
+    line-height: 2;
+    color:#eee;
+    padding:.5rem 0;
+    font-size: 1.6rem;
+    text-transform: none;
+}
+
+.footer{
+    background:#111;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:1.5rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    padding:1rem 0;
+    color:#fff;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    padding:1rem 0;
+    color:#eee;
+    text-transform: none;
+}
+
+.footer .box-container .box a i{
+    padding-right: .5rem;
+    color:var(--main-color);
+}
+
+.footer .credit{
+    text-align: center;
+    border-top: .1rem solid #222;
+    color:#fff;
+    padding:2rem;
+    font-size: 2rem;
+    text-transform: none;
+}
+
+.footer .credit span{
+    color:var(--main-color);
+}
+
+@media (max-width:768px){
+    #menu-bars{ display: initial; }
+    .header .navbar{
+        position: absolute;
+        top:100%; left:0; right:0;
+        background: #333;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .header .navbar a{
+        display: flex;
+        background:#222;
+        padding:1.3rem;
+        margin:1.3rem;
+        font-size: 2rem;
+    }
+    .booking-form .inputBox input,
+    .booking-form .inputBox select {
+        width: 100%;
+    }
+}
