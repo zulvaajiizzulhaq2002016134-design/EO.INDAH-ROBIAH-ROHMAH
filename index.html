@@ -1,258 +1,291 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Organizer - Ulang Tahun & Lamaran</title>
-
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IRR Event Organizer — MC, Fotografer, Catering & Snack</title>
+  <meta name="description" content="IRR Event Organizer menyediakan layanan satuan MC, fotografer, catering, dan snack untuk acara ulang tahun dan lamaran. Hemat 10% untuk pemesanan minimal 2 layanan.">
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-<!-- header section starts -->
-<header class="header">
-    <a href="#" class="logo"><span>e</span>vento</a>
 
-    <nav class="navbar">
-        <a href="#home">home</a>
-        <a href="#service">service</a>
-        <a href="#calendar">kalender</a>
-        <a href="#price">price</a>
-        <a href="#booking">pemesanan</a>
-        <a href="#review">review</a>
-    </nav>
-
-    <div id="menu-bars" class="fas fa-bars"></div>
-</header>
-<!-- header section ends -->
-
-<!-- home section starts -->
-<section class="home" id="home">
-    <div class="content">
-        <h3>waktunya merayakan! <span>event organizer terbaik</span></h3>
-        <p>Wujudkan momen spesial ulang tahun dan acara lamaran impian Anda bersama kami.</p>
-        <a href="#booking" class="btn">pesan sekarang</a>
+  <!-- HEADER -->
+  <header class="header" id="top">
+    <div class="container header-inner">
+      <a href="#home" class="brand" aria-label="IRR Event Organizer">
+        <img src="images/logo.png" alt="Logo IRR Event Organizer">
+        <span>IRR <small>Event Organizer</small></span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="#layanan">Layanan</a>
+        <a href="#promo">Promo</a>
+        <a href="#kalender">Kalender</a>
+        <a href="#booking">Booking</a>
+        <a href="#ulasan">Ulasan</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
     </div>
+  </header>
 
-    <div class="swiper-container home-slider">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="images/slide-1.jpg" alt="Slide 1"></div>
-            <div class="swiper-slide"><img src="images/slide-2.jpg" alt="Slide 2"></div>
-            <div class="swiper-slide"><img src="images/slide-3.jpg" alt="Slide 3"></div>
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Ulang Tahun &amp; Lamaran</p>
+          <h1>Acara lebih tertata, <span>momen lebih berkesan.</span></h1>
+          <p class="lead">Pilih layanan yang Anda butuhkan saja: MC, fotografer, catering, atau snack. Tanpa harus mengambil paket lengkap.</p>
+          <div class="hero-actions">
+            <a href="#booking" class="btn btn-primary">Booking Sekarang</a>
+            <a href="#layanan" class="btn btn-ghost">Lihat Layanan</a>
+          </div>
+          <ul class="hero-points">
+            <li>Layanan satuan fleksibel</li>
+            <li>Hemat 10% untuk 2 layanan</li>
+            <li>Cek tanggal langsung online</li>
+          </ul>
         </div>
-    </div>
-</section>
-<!-- home section ends -->
+        <div class="hero-visual" aria-hidden="true">
+          <img src="images/logo.png" alt="">
+        </div>
+      </div>
+    </section>
 
-<!-- service section starts -->
-<section class="service" id="service">
-    <h1 class="heading"> our <span>services</span> </h1>
+    <!-- LAYANAN SATUAN -->
+    <section class="section" id="layanan">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Layanan Satuan</p>
+          <h2>Butuh layanan tertentu tanpa harus ambil paket lengkap?</h2>
+          <p>IRR Event Organizer menyediakan berbagai layanan satuan yang dapat disesuaikan dengan kebutuhan acara Anda.</p>
+        </header>
+        <div class="grid grid-3" id="service-grid"></div>
+      </div>
+    </section>
 
-    <div class="box-container">
-        <!-- 1. Ulang Tahun -->
-        <div class="box">
-            <i class="fas fa-birthday-cake service-icon"></i>
-            <h3>Ulang Tahun</h3>
-            <p>Rayakan hari spesial dengan konsep meriah dan tertata rapi:</p>
-            <ul class="service-list">
-                <li><i class="fas fa-check"></i> Layanan Pembawa Acara (MC)</li>
-                <li><i class="fas fa-check"></i> Dekorasi Ulang Tahun</li>
-                <li><i class="fas fa-check"></i> Fotografer & Videografer</li>
-                <li><i class="fas fa-check"></i> Snack / Makanan Ulang Tahun</li>
+    <!-- PROMO -->
+    <section class="section section-alt" id="promo">
+      <div class="container">
+        <div class="promo">
+          <div class="promo-badge">10%</div>
+          <div class="promo-body">
+            <p class="eyebrow">Promo Spesial IRR Event Organizer</p>
+            <h2>Pesan Lebih Banyak, Lebih Hemat!</h2>
+            <p>Dapatkan diskon 10% untuk pemesanan minimal 2 paket/layanan dari IRR Event Organizer.</p>
+            <ul class="chips">
+              <li>MC + Fotografer</li>
+              <li>MC + Catering</li>
+              <li>Fotografer + Catering</li>
+              <li>MC + Snack</li>
+              <li>Kombinasi lainnya</li>
             </ul>
+            <p class="fine">Ketentuan promo mengikuti jenis dan jumlah layanan yang dipesan.</p>
+          </div>
+          <a href="#booking" class="btn btn-light">Pakai Promo</a>
         </div>
+      </div>
+    </section>
 
-        <!-- 2. Lamaran -->
-        <div class="box">
-            <i class="fas fa-ring service-icon"></i>
-            <h3>Lamaran (Engagement)</h3>
-            <p>Momen sakral penyatuan dua hati menjadi lebih romantis dan elegan:</p>
-            <ul class="service-list">
-                <li><i class="fas fa-check"></i> Layanan Pembawa Acara (MC)</li>
-                <li><i class="fas fa-check"></i> Dekorasi Lamaran</li>
-                <li><i class="fas fa-check"></i> Fotografer & Videografer</li>
-                <li><i class="fas fa-check"></i> Snack / Makanan Lamaran</li>
-            </ul>
-        </div>
-    </div>
-</section>
-<!-- service section ends -->
+    <!-- KALENDER -->
+    <section class="section" id="kalender">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Kalender Booking</p>
+          <h2>Cek ketersediaan tanggal</h2>
+          <p>Tanggal yang sudah dibooking menampilkan jenis layanannya. Satu tanggal bisa dipakai beberapa layanan, jadi tetap hubungi kami untuk memastikan.</p>
+        </header>
 
-<!-- calendar section starts -->
-<section class="calendar-section" id="calendar">
-    <h1 class="heading"> jadwal <span>kalender</span> </h1>
-    <p class="calendar-desc">Cek tanggal acara Anda. Pastikan tanggal pilihan masih tersedia (Hijau = Tersedia, Merah = Penuh).</p>
-    
-    <div class="calendar-container">
-        <div class="calendar-header">
-            <button id="prev-month"><i class="fas fa-chevron-left"></i></button>
-            <h2 id="month-year">Oktober 2026</h2>
-            <button id="next-month"><i class="fas fa-chevron-right"></i></button>
-        </div>
-        <div class="weekdays">
-            <div>Min</div><div>Sen</div><div>Sel</div><div>Rab</div><div>Kam</div><div>Jum</div><div>Sab</div>
-        </div>
-        <div class="days-grid" id="days-grid"></div>
-        <div class="calendar-legend">
-            <span><i class="fas fa-circle text-success"></i> Tersedia</span>
-            <span><i class="fas fa-circle text-danger"></i> Penuh (Booked)</span>
-        </div>
-    </div>
-</section>
-<!-- calendar section ends -->
-
-<!-- price section starts -->
-<section class="price" id="price">
-    <h1 class="heading"> our <span>price</span> </h1>
-
-    <div class="box-container">
-        <div class="box">
-            <h3 class="title">Paket Ulang Tahun</h3>
-            <h3 class="amount">Rp 3.5 Juta</h3>
-            <ul>
-                <li><i class="fas fa-check"></i> MC Profesional</li>
-                <li><i class="fas fa-check"></i> Dekorasi Ulang Tahun</li>
-                <li><i class="fas fa-check"></i> Fotografer & Videografer</li>
-                <li><i class="fas fa-check"></i> Snack & Makanan</li>
-            </ul>
-            <a href="#booking" class="btn">pilih paket</a>
-        </div>
-
-        <div class="box">
-            <h3 class="title">Paket Lamaran</h3>
-            <h3 class="amount">Rp 4.8 Juta</h3>
-            <ul>
-                <li><i class="fas fa-check"></i> MC Lamaran</li>
-                <li><i class="fas fa-check"></i> Dekorasi Lamaran Estetik</li>
-                <li><i class="fas fa-check"></i> Fotografer & Videografer</li>
-                <li><i class="fas fa-check"></i> Snack & Makanan Lamaran</li>
-            </ul>
-            <a href="#booking" class="btn">pilih paket</a>
-        </div>
-    </div>
-</section>
-<!-- price section ends -->
-
-<!-- booking section starts -->
-<section class="contact booking-section" id="booking">
-    <h1 class="heading"> <span>pemesanan</span> paket </h1>
-
-    <form class="booking-form" id="order-form">
-        <div class="inputBox">
-            <input type="text" id="client-name" placeholder="nama lengkap" required>
-            <input type="tel" id="client-phone" placeholder="nomor whatsapp" required>
-        </div>
-        <div class="inputBox">
-            <select id="package-choice" required>
-                <option value="" disabled selected>-- pilih paket layanan --</option>
-                <option value="Paket Ulang Tahun - Rp 3.5 Juta">Paket Ulang Tahun (Rp 3.5 Juta)</option>
-                <option value="Paket Lamaran - Rp 4.8 Juta">Paket Lamaran (Rp 4.8 Juta)</option>
-            </select>
-            <input type="date" id="event-date" required>
-        </div>
-        <textarea placeholder="catatan tambahan (lokasi, konsep warna, dll)" id="event-notes" cols="30" rows="5"></textarea>
-
-        <div class="payment-info-box">
-            <h3><i class="fas fa-wallet"></i> Informasi Pembayaran & DP</h3>
-            <p>Silakan transfer DP (30%) ke rekening berikut atau scan QRIS:</p>
-            <div class="bank-details">
-                <p><strong>Bank BCA:</strong> 1234-5678-9010 (a.n. Event Organizer)</p>
-                <p><strong>Bank Mandiri:</strong> 0987-6543-2101 (a.n. Event Organizer)</p>
-                <div class="qris-box">
-                    <i class="fas fa-qrcode"></i>
-                    <span>[QRIS Resmi EO - Scan untuk Bayar]</span>
-                </div>
+        <div class="calendar-layout">
+          <div class="calendar card">
+            <div class="cal-head">
+              <button class="icon-btn" id="prev-month" aria-label="Bulan sebelumnya">&#8249;</button>
+              <h3 id="month-year" aria-live="polite"></h3>
+              <button class="icon-btn" id="next-month" aria-label="Bulan berikutnya">&#8250;</button>
             </div>
+            <div class="cal-week" aria-hidden="true">
+              <span>Min</span><span>Sen</span><span>Sel</span><span>Rab</span><span>Kam</span><span>Jum</span><span>Sab</span>
+            </div>
+            <div class="cal-grid" id="days-grid"></div>
+            <ul class="legend">
+              <li><i class="dot dot-free"></i> Kosong</li>
+              <li><i class="dot dot-booked"></i> Ada booking</li>
+              <li><i class="dot dot-today"></i> Hari ini</li>
+            </ul>
+          </div>
+
+          <aside class="card day-detail" id="day-detail" aria-live="polite">
+            <h3>Detail tanggal</h3>
+            <p class="muted">Pilih tanggal di kalender untuk melihat layanan yang sudah dibooking.</p>
+          </aside>
         </div>
+      </div>
+    </section>
 
-        <button type="submit" class="btn"><i class="fab fa-whatsapp"></i> kirim pesanan via whatsapp</button>
-    </form>
-</section>
-<!-- booking section ends -->
+    <!-- BOOKING -->
+    <section class="section section-alt" id="booking">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Booking</p>
+          <h2>Pesan layanan Anda</h2>
+          <p>Isi formulir, lalu pesanan dikirim ke WhatsApp kami untuk konfirmasi tanggal dan penawaran.</p>
+        </header>
 
-<!-- review section starts -->
-<section class="reivew" id="review">    
-    <h1 class="heading">client's <span>review</span></h1>
-
-    <div class="review-slider swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide box">
-                <i class="fas fa-quote-right"></i>
-                <div class="user">
-                    <img src="images/pic-1.png" alt="Client">
-                    <div class="user-info">
-                        <h3>Siti Rahma</h3>
-                        <span>Klien Ulang Tahun</span>
-                    </div>
-                </div>
-                <p>Dekorasi ulang tahun anak saya sangat cantik! MC-nya interaktif dan makanan kuenya enak.</p>
+        <div class="booking-layout">
+          <form class="card form" id="order-form" novalidate>
+            <div class="field-row">
+              <div class="field">
+                <label for="client-name">Nama lengkap</label>
+                <input type="text" id="client-name" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="client-phone">Nomor WhatsApp</label>
+                <input type="tel" id="client-phone" inputmode="tel" autocomplete="tel" placeholder="08xx-xxxx-xxxx" required>
+              </div>
             </div>
 
-            <div class="swiper-slide box">
-                <i class="fas fa-quote-right"></i>
-                <div class="user">
-                    <img src="images/pic-2.png" alt="Client">
-                    <div class="user-info">
-                        <h3>Dimas & Amalia</h3>
-                        <span>Klien Lamaran</span>
-                    </div>
-                </div>
-                <p>Acara lamaran kami berjalan sangat khidmat dan lancar. Dokumentasi fotonya keren.</p>
+            <div class="field-row">
+              <div class="field">
+                <label for="event-type">Jenis acara</label>
+                <select id="event-type" required>
+                  <option value="" disabled selected>Pilih jenis acara</option>
+                  <option>Ulang Tahun</option>
+                  <option>Lamaran</option>
+                  <option>Lainnya</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="event-date">Tanggal acara</label>
+                <input type="date" id="event-date" required>
+                <small class="hint" id="date-hint"></small>
+              </div>
             </div>
 
-            <div class="swiper-slide box">
-                <i class="fas fa-quote-right"></i>
-                <div class="user">
-                    <img src="images/pic-3.png" alt="Client">
-                    <div class="user-info">
-                        <h3>Rian Pratama</h3>
-                        <span>Klien Ulang Tahun</span>
-                    </div>
-                </div>
-                <p>Pelayanan sangat profesional dari awal konsultasi sampai hari H. Terima kasih!</p>
+            <fieldset class="field services-pick">
+              <legend>Pilih layanan</legend>
+              <div id="service-options"></div>
+            </fieldset>
+
+            <div class="field">
+              <label for="event-notes">Catatan tambahan <span class="muted">(opsional)</span></label>
+              <textarea id="event-notes" rows="4" placeholder="Lokasi, konsep acara, jumlah tamu, dan lainnya"></textarea>
             </div>
+
+            <p class="form-error" id="form-error" role="alert" hidden></p>
+            <button type="submit" class="btn btn-primary btn-block">Kirim Pesanan via WhatsApp</button>
+          </form>
+
+          <aside class="side">
+            <div class="card summary">
+              <h3>Ringkasan pesanan</h3>
+              <ul class="summary-list" id="summary-list">
+                <li class="muted">Belum ada layanan dipilih.</li>
+              </ul>
+              <dl class="summary-total">
+                <div><dt>Subtotal</dt><dd id="sum-subtotal">Rp0</dd></div>
+                <div class="discount" id="sum-discount-row" hidden><dt>Diskon promo 10%</dt><dd id="sum-discount">-Rp0</dd></div>
+                <div class="total"><dt>Estimasi total</dt><dd id="sum-total">Rp0</dd></div>
+              </dl>
+              <p class="fine" id="sum-note">Harga final dikonfirmasi admin. Layanan MC berstatus "mulai dari".</p>
+            </div>
+
+            <div class="card pay">
+              <h3>Informasi Pembayaran</h3>
+              <p>Pembayaran hanya dilakukan ke rekening atas nama:</p>
+              <p class="pay-name">Indah Robiah Rohmah</p>
+              <p class="pay-account" id="pay-account"></p>
+              <p class="warn">Pastikan nama penerima adalah <strong>Indah Robiah Rohmah</strong> sebelum melakukan transfer.</p>
+            </div>
+          </aside>
         </div>
+      </div>
+    </section>
+
+    <!-- ULASAN -->
+    <section class="section" id="ulasan">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Ulasan Pelanggan</p>
+          <h2>Cerita dari pelanggan kami</h2>
+          <p>Sudah memakai layanan IRR? Bagikan pengalaman Anda untuk membantu calon pelanggan lain.</p>
+        </header>
+
+        <div class="reviews-layout">
+          <form class="card form" id="review-form" novalidate>
+            <h3>Tulis ulasan</h3>
+            <div class="field">
+              <label for="rv-name">Nama</label>
+              <input type="text" id="rv-name" maxlength="40" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="rv-service">Layanan yang dipakai</label>
+              <select id="rv-service" required></select>
+            </div>
+            <fieldset class="field">
+              <legend>Penilaian</legend>
+              <div class="stars-input" id="rv-stars">
+                <input type="radio" name="rating" id="st5" value="5"><label for="st5" title="5 bintang">&#9733;</label>
+                <input type="radio" name="rating" id="st4" value="4"><label for="st4" title="4 bintang">&#9733;</label>
+                <input type="radio" name="rating" id="st3" value="3"><label for="st3" title="3 bintang">&#9733;</label>
+                <input type="radio" name="rating" id="st2" value="2"><label for="st2" title="2 bintang">&#9733;</label>
+                <input type="radio" name="rating" id="st1" value="1"><label for="st1" title="1 bintang">&#9733;</label>
+              </div>
+            </fieldset>
+            <div class="field">
+              <label for="rv-text">Ulasan Anda</label>
+              <textarea id="rv-text" rows="4" maxlength="500" placeholder="Ceritakan pengalaman Anda" required></textarea>
+              <small class="hint"><span id="rv-count">0</span>/500</small>
+            </div>
+            <p class="form-error" id="rv-error" role="alert" hidden></p>
+            <button type="submit" class="btn btn-primary btn-block">Kirim Ulasan</button>
+          </form>
+
+          <div class="reviews-list">
+            <div class="rating-summary card" id="rating-summary" hidden>
+              <div class="avg" id="avg-score">0.0</div>
+              <div>
+                <div class="stars" id="avg-stars" aria-hidden="true"></div>
+                <small class="muted" id="avg-count"></small>
+              </div>
+            </div>
+            <div id="review-list" class="review-items"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section class="section section-alt" id="kontak">
+      <div class="container">
+        <div class="contact card">
+          <div>
+            <p class="eyebrow">Hubungi IRR Event Organizer</p>
+            <h2>Konsultasi &amp; cek tanggal</h2>
+            <p>Untuk konsultasi layanan, cek ketersediaan tanggal, mendapatkan penawaran, atau melakukan booking, silakan hubungi kami melalui WhatsApp.</p>
+          </div>
+          <a class="btn btn-primary" id="wa-link" href="#" target="_blank" rel="noopener">WhatsApp 0858-7629-3847</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="brand brand-footer">
+        <img src="images/logo.png" alt="">
+        <span>IRR <small>Event Organizer</small></span>
+      </div>
+      <p>Pembayaran hanya ke rekening a.n. <strong>Indah Robiah Rohmah</strong>.</p>
+      <p class="fine">&copy; <span id="year"></span> IRR Event Organizer. Hak cipta dilindungi.</p>
     </div>
-</section>
-<!-- review section ends -->
+  </footer>
 
-<!-- footer section starts -->
-<section class="footer">
-    <div class="box-container">
-        <div class="box">
-            <h3>layanan</h3>
-            <a href="#service"> <i class="fas fa-arrow-right"></i> Ulang Tahun </a>
-            <a href="#service"> <i class="fas fa-arrow-right"></i> Lamaran / Engagement </a>
-            <a href="#calendar"> <i class="fas fa-arrow-right"></i> Kalender Jadwal </a>
-        </div>
-
-        <div class="box">
-            <h3>tautan cepat</h3>
-            <a href="#home"> <i class="fas fa-arrow-right"></i> home </a>
-            <a href="#service"> <i class="fas fa-arrow-right"></i> service </a>
-            <a href="#price"> <i class="fas fa-arrow-right"></i> price </a>
-            <a href="#review"> <i class="fas fa-arrow-right"></i> review </a>
-        </div>
-
-        <div class="box">
-            <h3>kontak info</h3>
-            <a href="#"> <i class="fas fa-phone"></i> +62 812-3456-7890 </a>
-            <a href="#"> <i class="fas fa-envelope"></i> info@evento.com </a>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> Semarang, Jawa Tengah </a>
-        </div>
-    </div>
-
-    <div class="credit"> created by <span>Event Organizer</span> | all rights reserved </div>
-</section>
-<!-- footer section ends -->
-
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
