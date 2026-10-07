@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,11 +20,18 @@
         <img src="images/logo.png" alt="Logo IRR Event Organizer">
         <span>IRR <small>Event Organizer</small></span>
       </a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Buka menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="header-right">
+        <!-- TOMBOL TOGGLE DARK / LIGHT MODE -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Ubah tema gelap/terang">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Buka menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
       <nav class="nav" id="nav">
         <a href="#layanan">Layanan</a>
+        <a href="#galeri">Galeri</a>
         <a href="#promo">Promo</a>
         <a href="#kalender">Kalender</a>
         <a href="#booking">Booking</a>
@@ -39,11 +46,11 @@
     <section class="hero" id="home">
       <div class="container hero-inner">
         <div class="hero-text">
-          <p class="eyebrow">Ulang Tahun &amp; Lamaran</p>
+          <p class="eyebrow">🌸 Spesialis Ulang Tahun &amp; Lamaran 🌸</p>
           <h1>Acara lebih tertata, <span>momen lebih berkesan.</span></h1>
-          <p class="lead">Pilih layanan yang Anda butuhkan saja: MC, fotografer, catering, atau snack. Tanpa harus mengambil paket lengkap.</p>
+          <p class="lead">Pilih layanan yang Anda butuhkan saja: MC, fotografer, catering, atau snack. Didesain khusus untuk hari istimewa Anda!</p>
           <div class="hero-actions">
-            <a href="#booking" class="btn btn-primary">Booking Sekarang</a>
+            <a href="#booking" class="btn btn-primary">Booking Sekarang ✨</a>
             <a href="#layanan" class="btn btn-ghost">Lihat Layanan</a>
           </div>
           <ul class="hero-points">
@@ -53,7 +60,7 @@
           </ul>
         </div>
         <div class="hero-visual" aria-hidden="true">
-          <img src="images/logo.png" alt="">
+          <img src="images/logo.png" alt="Logo IRR EO">
         </div>
       </div>
     </section>
@@ -70,8 +77,37 @@
       </div>
     </section>
 
+    <!-- GALERI FOTO PENDUKUNG / PORTOFOLIO -->
+    <section class="section section-alt" id="galeri">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Dokumentasi &amp; Portofolio</p>
+          <h2>Momen Indah Bersama IRR EO</h2>
+          <p>Beberapa potret keseruan dekorasi, suasana acara, dan layanan terbaik kami untuk para klien.</p>
+        </header>
+        <div class="grid grid-3 gallery-grid">
+          <div class="gallery-card card">
+            <div class="gallery-img-placeholder">🌸 [Foto Dekorasi / Lamaran 1]</div>
+            <h3>Dekorasi Lamaran Manis</h3>
+            <p class="muted">Nuansa pink romantis dan hangat.</p>
+          </div>
+          <div class="gallery-card card">
+            <div class="gallery-img-placeholder">🎂 [Foto Ulang Tahun 2]</div>
+            <h3>Pesta Ulang Tahun Ceria</h3>
+            <p class="muted">Keseruan momen spesial bersama keluarga.</p>
+          </div>
+          <div class="gallery-card card">
+            <div class="gallery-img-placeholder">📸 [Foto Dokumentasi 3]</div>
+            <h3>Sesi Foto &amp; Catering</h3>
+            <p class="muted">Pelayanan profesional dan higienis.</p>
+          </div>
+        </div>
+        <p class="fine center-text mt-2">*(Ganti placeholder di atas dengan file foto asli Anda di folder `images/`, misal: `images/foto1.jpg`)*</p>
+      </div>
+    </section>
+
     <!-- PROMO -->
-    <section class="section section-alt" id="promo">
+    <section class="section" id="promo">
       <div class="container">
         <div class="promo">
           <div class="promo-badge">10%</div>
@@ -94,7 +130,7 @@
     </section>
 
     <!-- KALENDER -->
-    <section class="section" id="kalender">
+    <section class="section section-alt" id="kalender">
       <div class="container">
         <header class="section-head">
           <p class="eyebrow">Kalender Booking</p>
@@ -129,7 +165,7 @@
     </section>
 
     <!-- BOOKING -->
-    <section class="section section-alt" id="booking">
+    <section class="section" id="booking">
       <div class="container">
         <header class="section-head">
           <p class="eyebrow">Booking</p>
@@ -178,7 +214,7 @@
             </div>
 
             <p class="form-error" id="form-error" role="alert" hidden></p>
-            <button type="submit" class="btn btn-primary btn-block">Kirim Pesanan via WhatsApp</button>
+            <button type="submit" class="btn btn-primary btn-block">Kirim Pesanan via WhatsApp 💖</button>
           </form>
 
           <aside class="side">
@@ -208,7 +244,7 @@
     </section>
 
     <!-- ULASAN -->
-    <section class="section" id="ulasan">
+    <section class="section section-alt" id="ulasan">
       <div class="container">
         <header class="section-head">
           <p class="eyebrow">Ulasan Pelanggan</p>
@@ -261,7 +297,7 @@
     </section>
 
     <!-- KONTAK -->
-    <section class="section section-alt" id="kontak">
+    <section class="section" id="kontak">
       <div class="container">
         <div class="contact card">
           <div>
