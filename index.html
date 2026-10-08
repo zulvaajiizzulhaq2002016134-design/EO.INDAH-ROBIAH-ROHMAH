@@ -1,327 +1,1124 @@
 <!DOCTYPE html>
-<html lang="id" data-theme="light">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IRR Event Organizer — MC, Fotografer, Catering & Snack</title>
-  <meta name="description" content="IRR Event Organizer menyediakan layanan satuan MC, fotografer, catering, dan snack untuk acara ulang tahun dan lamaran. Hemat 10% untuk pemesanan minimal 2 layanan.">
+
+  <title>IRR Event Organizer | MC, Fotografer, Catering & Snack</title>
+
+  <meta name="description" content="IRR Event Organizer menyediakan layanan MC, fotografer, catering dan snack untuk acara ulang tahun, lamaran dan berbagai acara spesial. Booking mudah melalui WhatsApp.">
+
+  <meta name="theme-color" content="#b85ad8">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="IRR Event Organizer">
+  <meta property="og:description" content="Layanan MC, fotografer, catering dan snack untuk acara spesial Anda.">
+  <meta property="og:image" content="images/logo.png">
+
   <link rel="icon" href="images/logo.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-  <!-- HEADER -->
-  <header class="header" id="top">
-    <div class="container header-inner">
-      <a href="#home" class="brand" aria-label="IRR Event Organizer">
+<!-- ================= HEADER ================= -->
+
+<header class="header" id="top">
+
+  <div class="container header-inner">
+
+    <a href="#home" class="brand" aria-label="IRR Event Organizer">
+
+      <span class="brand-logo">
         <img src="images/logo.png" alt="Logo IRR Event Organizer">
-        <span>IRR <small>Event Organizer</small></span>
-      </a>
-      <div class="header-right">
-        <!-- TOMBOL TOGGLE DARK / LIGHT MODE -->
-        <button class="theme-toggle" id="theme-toggle" aria-label="Ubah tema gelap/terang">
-          <span class="theme-icon">🌙</span>
-        </button>
-        <button class="nav-toggle" id="nav-toggle" aria-label="Buka menu" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
+      </span>
+
+      <span class="brand-text">
+        <strong>IRR</strong>
+        <small>Event Organizer</small>
+      </span>
+
+    </a>
+
+    <button
+      class="nav-toggle"
+      id="nav-toggle"
+      type="button"
+      aria-label="Buka menu"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+
+      <a href="#home">Beranda</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#promo">Promo</a>
+      <a href="#kalender">Kalender</a>
+      <a href="#booking">Booking</a>
+      <a href="#ulasan">Ulasan</a>
+      <a href="#kontak">Kontak</a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<main>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+  <div class="hero-decoration hero-decoration-one"></div>
+  <div class="hero-decoration hero-decoration-two"></div>
+
+  <div class="container hero-inner">
+
+    <div class="hero-content">
+
+      <div class="hero-badge">
+        <span></span>
+        Ulang Tahun • Lamaran • Acara Spesial
       </div>
-      <nav class="nav" id="nav">
+
+      <p class="eyebrow">
+        IRR EVENT ORGANIZER
+      </p>
+
+      <h1>
+        Momen spesial,
+        <span>kami bantu buat lebih berkesan.</span>
+      </h1>
+
+      <p class="hero-description">
+        Pilih layanan yang Anda butuhkan tanpa harus mengambil paket lengkap.
+        Mulai dari MC, fotografer, catering hingga snack.
+      </p>
+
+      <div class="hero-actions">
+
+        <a href="#booking" class="btn btn-primary">
+          Booking Sekarang
+          <span>→</span>
+        </a>
+
+        <a href="#layanan" class="btn btn-outline">
+          Lihat Layanan
+        </a>
+
+      </div>
+
+      <div class="hero-trust">
+
+        <div class="trust-item">
+          <strong>4+</strong>
+          <span>Layanan</span>
+        </div>
+
+        <div class="trust-line"></div>
+
+        <div class="trust-item">
+          <strong>10%</strong>
+          <span>Promo</span>
+        </div>
+
+        <div class="trust-line"></div>
+
+        <div class="trust-item">
+          <strong>WA</strong>
+          <span>Booking mudah</span>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="hero-visual">
+
+      <div class="hero-card-main">
+
+        <div class="hero-image-wrap">
+          <img
+            src="images/logo.png"
+            alt="IRR Event Organizer"
+            class="hero-logo"
+          >
+        </div>
+
+        <div class="hero-card-info">
+
+          <div>
+            <span class="mini-label">READY TO SERVE</span>
+            <strong>IRR Event Organizer</strong>
+          </div>
+
+          <div class="hero-check">
+            ✓
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="floating-card floating-card-top">
+        <span class="floating-icon">✦</span>
+        <div>
+          <strong>Booking Fleksibel</strong>
+          <small>Pilih layanan sesuai kebutuhan</small>
+        </div>
+      </div>
+
+      <div class="floating-card floating-card-bottom">
+        <span class="floating-icon">10%</span>
+        <div>
+          <strong>Lebih Hemat</strong>
+          <small>Minimal 2 layanan</small>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= LAYANAN ================= -->
+
+<section class="section services-section" id="layanan">
+
+  <div class="container">
+
+    <header class="section-head">
+
+      <span class="section-number">01</span>
+
+      <div>
+
+        <p class="eyebrow">
+          LAYANAN KAMI
+        </p>
+
+        <h2>
+          Layanan yang bisa
+          <span>disesuaikan.</span>
+        </h2>
+
+        <p>
+          Tidak perlu mengambil paket lengkap. Pilih layanan yang benar-benar
+          Anda perlukan untuk acara Anda.
+        </p>
+
+      </div>
+
+    </header>
+
+    <div class="service-grid" id="service-grid"></div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= PROMO ================= -->
+
+<section class="section promo-section" id="promo">
+
+  <div class="container">
+
+    <div class="promo">
+
+      <div class="promo-decoration"></div>
+
+      <div class="promo-badge">
+
+        <span>HEMAT</span>
+        <strong>10%</strong>
+
+      </div>
+
+      <div class="promo-content">
+
+        <p class="eyebrow">
+          PROMO SPESIAL
+        </p>
+
+        <h2>
+          Pesan lebih banyak,
+          <span>lebih hemat.</span>
+        </h2>
+
+        <p>
+          Dapatkan diskon 10% untuk pemesanan minimal 2 layanan.
+          Cocok untuk Anda yang ingin menggabungkan beberapa kebutuhan acara.
+        </p>
+
+        <div class="chips">
+
+          <span>MC + Fotografer</span>
+          <span>MC + Catering</span>
+          <span>Fotografer + Catering</span>
+          <span>MC + Snack</span>
+
+        </div>
+
+      </div>
+
+      <a href="#booking" class="btn btn-white">
+        Gunakan Promo →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= KALENDER ================= -->
+
+<section class="section calendar-section" id="kalender">
+
+  <div class="container">
+
+    <header class="section-head">
+
+      <span class="section-number">02</span>
+
+      <div>
+
+        <p class="eyebrow">
+          KALENDER BOOKING
+        </p>
+
+        <h2>
+          Cek ketersediaan
+          <span>tanggal acara.</span>
+        </h2>
+
+        <p>
+          Pilih tanggal untuk melihat informasi booking.
+          Ketersediaan akhir tetap dikonfirmasi oleh admin.
+        </p>
+
+      </div>
+
+    </header>
+
+
+    <div class="calendar-layout">
+
+      <div class="calendar card">
+
+        <div class="calendar-top">
+
+          <button
+            class="calendar-arrow"
+            id="prev-month"
+            type="button"
+            aria-label="Bulan sebelumnya"
+          >
+            ←
+          </button>
+
+          <div>
+            <span class="calendar-label">KALENDER</span>
+            <h3 id="month-year"></h3>
+          </div>
+
+          <button
+            class="calendar-arrow"
+            id="next-month"
+            type="button"
+            aria-label="Bulan berikutnya"
+          >
+            →
+          </button>
+
+        </div>
+
+        <div class="cal-week" aria-hidden="true">
+          <span>Min</span>
+          <span>Sen</span>
+          <span>Sel</span>
+          <span>Rab</span>
+          <span>Kam</span>
+          <span>Jum</span>
+          <span>Sab</span>
+        </div>
+
+        <div class="cal-grid" id="days-grid"></div>
+
+        <div class="calendar-legend">
+
+          <span>
+            <i class="legend-dot free"></i>
+            Kosong
+          </span>
+
+          <span>
+            <i class="legend-dot booked"></i>
+            Ada booking
+          </span>
+
+          <span>
+            <i class="legend-dot today"></i>
+            Hari ini
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <aside class="card day-detail" id="day-detail" aria-live="polite">
+
+        <div class="detail-icon">
+          📅
+        </div>
+
+        <p class="eyebrow">
+          DETAIL TANGGAL
+        </p>
+
+        <h3>
+          Pilih tanggal
+        </h3>
+
+        <p class="muted">
+          Pilih tanggal pada kalender untuk melihat layanan yang telah
+          dibooking.
+        </p>
+
+      </aside>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= BOOKING ================= -->
+
+<section class="section booking-section" id="booking">
+
+  <div class="container">
+
+    <header class="section-head">
+
+      <span class="section-number">03</span>
+
+      <div>
+
+        <p class="eyebrow">
+          BOOKING
+        </p>
+
+        <h2>
+          Wujudkan acara
+          <span>Anda bersama kami.</span>
+        </h2>
+
+        <p>
+          Isi formulir berikut. Pesanan akan diteruskan ke WhatsApp
+          untuk konfirmasi ketersediaan dan detail acara.
+        </p>
+
+      </div>
+
+    </header>
+
+
+    <div class="booking-layout">
+
+      <!-- FORM -->
+
+      <form
+        class="card booking-form"
+        id="order-form"
+        novalidate
+      >
+
+        <div class="form-heading">
+
+          <span class="form-step">01</span>
+
+          <div>
+            <h3>Informasi Pemesan</h3>
+            <p>Masukkan data untuk memudahkan kami menghubungi Anda.</p>
+          </div>
+
+        </div>
+
+
+        <div class="field-row">
+
+          <div class="field">
+
+            <label for="client-name">
+              Nama lengkap
+            </label>
+
+            <input
+              type="text"
+              id="client-name"
+              autocomplete="name"
+              placeholder="Contoh: Indah Robiah"
+              required
+            >
+
+          </div>
+
+
+          <div class="field">
+
+            <label for="client-phone">
+              Nomor WhatsApp
+            </label>
+
+            <input
+              type="tel"
+              id="client-phone"
+              inputmode="tel"
+              autocomplete="tel"
+              placeholder="08xx-xxxx-xxxx"
+              required
+            >
+
+          </div>
+
+        </div>
+
+
+        <div class="form-heading form-heading-space">
+
+          <span class="form-step">02</span>
+
+          <div>
+            <h3>Detail Acara</h3>
+            <p>Kami membutuhkan informasi dasar acara Anda.</p>
+          </div>
+
+        </div>
+
+
+        <div class="field-row">
+
+          <div class="field">
+
+            <label for="event-type">
+              Jenis acara
+            </label>
+
+            <select id="event-type" required>
+
+              <option value="" disabled selected>
+                Pilih jenis acara
+              </option>
+
+              <option>Ulang Tahun</option>
+              <option>Lamaran</option>
+              <option>Pernikahan</option>
+              <option>Acara Keluarga</option>
+              <option>Lainnya</option>
+
+            </select>
+
+          </div>
+
+
+          <div class="field">
+
+            <label for="event-date">
+              Tanggal acara
+            </label>
+
+            <input
+              type="date"
+              id="event-date"
+              required
+            >
+
+            <small class="hint" id="date-hint"></small>
+
+          </div>
+
+        </div>
+
+
+        <div class="form-heading form-heading-space">
+
+          <span class="form-step">03</span>
+
+          <div>
+            <h3>Pilih Layanan</h3>
+            <p>Anda dapat memilih lebih dari satu layanan.</p>
+          </div>
+
+        </div>
+
+
+        <fieldset class="services-pick">
+
+          <legend class="sr-only">
+            Pilih layanan
+          </legend>
+
+          <div id="service-options"></div>
+
+        </fieldset>
+
+
+        <div class="field notes-field">
+
+          <label for="event-notes">
+            Catatan tambahan
+            <span>(opsional)</span>
+          </label>
+
+          <textarea
+            id="event-notes"
+            rows="5"
+            placeholder="Contoh: lokasi acara, jumlah tamu, konsep acara, jam acara, dan informasi lainnya."
+          ></textarea>
+
+        </div>
+
+
+        <p
+          class="form-error"
+          id="form-error"
+          role="alert"
+          hidden
+        ></p>
+
+
+        <button
+          type="submit"
+          class="btn btn-primary btn-block btn-large"
+        >
+          Kirim Pesanan via WhatsApp
+          <span>→</span>
+        </button>
+
+
+        <p class="form-security">
+          🔒 Data formulir hanya digunakan untuk proses pemesanan dan
+          konfirmasi layanan.
+        </p>
+
+      </form>
+
+
+      <!-- SUMMARY -->
+
+      <aside class="booking-sidebar">
+
+        <div class="card summary-card">
+
+          <div class="summary-header">
+
+            <div>
+              <span class="summary-label">
+                RINGKASAN
+              </span>
+
+              <h3>
+                Pesanan Anda
+              </h3>
+            </div>
+
+            <div class="summary-icon">
+              ✓
+            </div>
+
+          </div>
+
+
+          <ul
+            class="summary-list"
+            id="summary-list"
+          >
+            <li class="muted">
+              Belum ada layanan dipilih.
+            </li>
+          </ul>
+
+
+          <dl class="summary-total">
+
+            <div>
+              <dt>Subtotal</dt>
+              <dd id="sum-subtotal">Rp0</dd>
+            </div>
+
+            <div
+              class="discount"
+              id="sum-discount-row"
+              hidden
+            >
+              <dt>Diskon 10%</dt>
+              <dd id="sum-discount">-Rp0</dd>
+            </div>
+
+            <div class="total">
+
+              <dt>
+                Estimasi total
+              </dt>
+
+              <dd id="sum-total">
+                Rp0
+              </dd>
+
+            </div>
+
+          </dl>
+
+
+          <div class="summary-note">
+
+            <span>i</span>
+
+            <p id="sum-note">
+              Pilih minimal 2 layanan untuk mendapatkan promo 10%.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="card payment-card">
+
+          <div class="payment-icon">
+            💳
+          </div>
+
+          <p class="eyebrow">
+            INFORMASI PEMBAYARAN
+          </p>
+
+          <h3>
+            Pembayaran Aman
+          </h3>
+
+          <p>
+            Pembayaran hanya dilakukan setelah detail pesanan
+            dikonfirmasi oleh admin.
+          </p>
+
+          <div class="payment-owner">
+
+            <span>Atas nama</span>
+
+            <strong>
+              Indah Robiah Rohmah
+            </strong>
+
+          </div>
+
+          <p
+            class="pay-account"
+            id="pay-account"
+          ></p>
+
+          <div class="payment-warning">
+            <strong>Perhatian</strong>
+            <span>
+              Pastikan nama penerima sesuai sebelum melakukan transfer.
+            </span>
+          </div>
+
+        </div>
+
+      </aside>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= REVIEW ================= -->
+
+<section class="section reviews-section" id="ulasan">
+
+  <div class="container">
+
+    <header class="section-head">
+
+      <span class="section-number">04</span>
+
+      <div>
+
+        <p class="eyebrow">
+          ULASAN PELANGGAN
+        </p>
+
+        <h2>
+          Pengalaman mereka
+          <span>bersama IRR.</span>
+        </h2>
+
+        <p>
+          Bagikan pengalaman Anda setelah menggunakan layanan kami.
+        </p>
+
+      </div>
+
+    </header>
+
+
+    <div class="reviews-layout">
+
+
+      <form
+        class="card review-form"
+        id="review-form"
+        novalidate
+      >
+
+        <div class="form-heading">
+
+          <span class="form-step">★</span>
+
+          <div>
+            <h3>Tulis Ulasan</h3>
+            <p>Pengalaman Anda sangat berarti bagi kami.</p>
+          </div>
+
+        </div>
+
+
+        <div class="field">
+
+          <label for="rv-name">
+            Nama
+          </label>
+
+          <input
+            type="text"
+            id="rv-name"
+            maxlength="40"
+            autocomplete="name"
+            placeholder="Nama Anda"
+            required
+          >
+
+        </div>
+
+
+        <div class="field">
+
+          <label for="rv-service">
+            Layanan yang dipakai
+          </label>
+
+          <select id="rv-service" required></select>
+
+        </div>
+
+
+        <fieldset class="field">
+
+          <legend>
+            Penilaian
+          </legend>
+
+          <div class="stars-input" id="rv-stars">
+
+            <input
+              type="radio"
+              name="rating"
+              id="st5"
+              value="5"
+            >
+            <label for="st5">★</label>
+
+            <input
+              type="radio"
+              name="rating"
+              id="st4"
+              value="4"
+            >
+            <label for="st4">★</label>
+
+            <input
+              type="radio"
+              name="rating"
+              id="st3"
+              value="3"
+            >
+            <label for="st3">★</label>
+
+            <input
+              type="radio"
+              name="rating"
+              id="st2"
+              value="2"
+            >
+            <label for="st2">★</label>
+
+            <input
+              type="radio"
+              name="rating"
+              id="st1"
+              value="1"
+            >
+            <label for="st1">★</label>
+
+          </div>
+
+        </fieldset>
+
+
+        <div class="field">
+
+          <label for="rv-text">
+            Ulasan Anda
+          </label>
+
+          <textarea
+            id="rv-text"
+            rows="5"
+            maxlength="500"
+            placeholder="Ceritakan pengalaman Anda..."
+            required
+          ></textarea>
+
+          <small class="hint">
+            <span id="rv-count">0</span>/500
+          </small>
+
+        </div>
+
+
+        <p
+          class="form-error"
+          id="rv-error"
+          role="alert"
+          hidden
+        ></p>
+
+
+        <button
+          type="submit"
+          class="btn btn-primary btn-block"
+        >
+          Kirim Ulasan
+        </button>
+
+      </form>
+
+
+      <div class="reviews-list">
+
+        <div
+          class="rating-summary card"
+          id="rating-summary"
+          hidden
+        >
+
+          <div class="avg" id="avg-score">
+            0.0
+          </div>
+
+          <div>
+
+            <div
+              class="stars"
+              id="avg-stars"
+              aria-hidden="true"
+            ></div>
+
+            <small
+              class="muted"
+              id="avg-count"
+            ></small>
+
+          </div>
+
+        </div>
+
+
+        <div
+          id="review-list"
+          class="review-items"
+        ></div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-section" id="kontak">
+
+  <div class="container">
+
+    <div class="contact-card">
+
+      <div class="contact-content">
+
+        <span class="contact-icon">
+          WA
+        </span>
+
+        <div>
+
+          <p class="eyebrow">
+            BUTUH BANTUAN?
+          </p>
+
+          <h2>
+            Mari bicarakan acara Anda.
+          </h2>
+
+          <p>
+            Konsultasi layanan, cek tanggal, dan booking bisa
+            dilakukan langsung melalui WhatsApp.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <a
+        class="btn btn-white btn-large"
+        id="wa-link"
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        WhatsApp
+        <span>→</span>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+
+        <a href="#home" class="brand">
+
+          <span class="brand-logo">
+            <img src="images/logo.png" alt="">
+          </span>
+
+          <span class="brand-text">
+            <strong>IRR</strong>
+            <small>Event Organizer</small>
+          </span>
+
+        </a>
+
+        <p>
+          Membantu membuat momen spesial Anda menjadi
+          lebih tertata dan berkesan.
+        </p>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <h4>Navigasi</h4>
+
         <a href="#layanan">Layanan</a>
-        <a href="#galeri">Galeri</a>
         <a href="#promo">Promo</a>
         <a href="#kalender">Kalender</a>
         <a href="#booking">Booking</a>
-        <a href="#ulasan">Ulasan</a>
-        <a href="#kontak">Kontak</a>
-      </nav>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <h4>Layanan</h4>
+
+        <span>MC Acara</span>
+        <span>Fotografer</span>
+        <span>Catering</span>
+        <span>Snack</span>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <h4>Kontak</h4>
+
+        <a id="footer-wa" href="#">
+          0858-7629-3847
+        </a>
+
+        <span>
+          WhatsApp
+        </span>
+
+      </div>
+
     </div>
-  </header>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero" id="home">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <p class="eyebrow">🌸 Spesialis Ulang Tahun &amp; Lamaran 🌸</p>
-          <h1>Acara lebih tertata, <span>momen lebih berkesan.</span></h1>
-          <p class="lead">Pilih layanan yang Anda butuhkan saja: MC, fotografer, catering, atau snack. Didesain khusus untuk hari istimewa Anda!</p>
-          <div class="hero-actions">
-            <a href="#booking" class="btn btn-primary">Booking Sekarang ✨</a>
-            <a href="#layanan" class="btn btn-ghost">Lihat Layanan</a>
-          </div>
-          <ul class="hero-points">
-            <li>Layanan satuan fleksibel</li>
-            <li>Hemat 10% untuk 2 layanan</li>
-            <li>Cek tanggal langsung online</li>
-          </ul>
-        </div>
-        <div class="hero-visual" aria-hidden="true">
-          <img src="images/logo.png" alt="Logo IRR EO">
-        </div>
-      </div>
-    </section>
 
-    <!-- LAYANAN SATUAN -->
-    <section class="section" id="layanan">
-      <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">Layanan Satuan</p>
-          <h2>Butuh layanan tertentu tanpa harus ambil paket lengkap?</h2>
-          <p>IRR Event Organizer menyediakan berbagai layanan satuan yang dapat disesuaikan dengan kebutuhan acara Anda.</p>
-        </header>
-        <div class="grid grid-3" id="service-grid"></div>
-      </div>
-    </section>
+    <div class="footer-bottom">
 
-    <!-- GALERI FOTO PENDUKUNG / PORTOFOLIO -->
-    <section class="section section-alt" id="galeri">
-      <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">Dokumentasi &amp; Portofolio</p>
-          <h2>Momen Indah Bersama IRR EO</h2>
-          <p>Beberapa potret keseruan dekorasi, suasana acara, dan layanan terbaik kami untuk para klien.</p>
-        </header>
-        <div class="grid grid-3 gallery-grid">
-          <div class="gallery-card card">
-            <div class="gallery-img-placeholder">🌸 [Foto Dekorasi / Lamaran 1]</div>
-            <h3>Dekorasi Lamaran Manis</h3>
-            <p class="muted">Nuansa pink romantis dan hangat.</p>
-          </div>
-          <div class="gallery-card card">
-            <div class="gallery-img-placeholder">🎂 [Foto Ulang Tahun 2]</div>
-            <h3>Pesta Ulang Tahun Ceria</h3>
-            <p class="muted">Keseruan momen spesial bersama keluarga.</p>
-          </div>
-          <div class="gallery-card card">
-            <div class="gallery-img-placeholder">📸 [Foto Dokumentasi 3]</div>
-            <h3>Sesi Foto &amp; Catering</h3>
-            <p class="muted">Pelayanan profesional dan higienis.</p>
-          </div>
-        </div>
-        <p class="fine center-text mt-2">*(Ganti placeholder di atas dengan file foto asli Anda di folder `images/`, misal: `images/foto1.jpg`)*</p>
-      </div>
-    </section>
+      <p>
+        © <span id="year"></span> IRR Event Organizer.
+        Hak cipta dilindungi.
+      </p>
 
-    <!-- PROMO -->
-    <section class="section" id="promo">
-      <div class="container">
-        <div class="promo">
-          <div class="promo-badge">10%</div>
-          <div class="promo-body">
-            <p class="eyebrow">Promo Spesial IRR Event Organizer</p>
-            <h2>Pesan Lebih Banyak, Lebih Hemat!</h2>
-            <p>Dapatkan diskon 10% untuk pemesanan minimal 2 paket/layanan dari IRR Event Organizer.</p>
-            <ul class="chips">
-              <li>MC + Fotografer</li>
-              <li>MC + Catering</li>
-              <li>Fotografer + Catering</li>
-              <li>MC + Snack</li>
-              <li>Kombinasi lainnya</li>
-            </ul>
-            <p class="fine">Ketentuan promo mengikuti jenis dan jumlah layanan yang dipesan.</p>
-          </div>
-          <a href="#booking" class="btn btn-light">Pakai Promo</a>
-        </div>
-      </div>
-    </section>
+      <p>
+        Dibuat untuk pengalaman booking yang lebih mudah.
+      </p>
 
-    <!-- KALENDER -->
-    <section class="section section-alt" id="kalender">
-      <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">Kalender Booking</p>
-          <h2>Cek ketersediaan tanggal</h2>
-          <p>Tanggal yang sudah dibooking menampilkan jenis layanannya. Satu tanggal bisa dipakai beberapa layanan, jadi tetap hubungi kami untuk memastikan.</p>
-        </header>
-
-        <div class="calendar-layout">
-          <div class="calendar card">
-            <div class="cal-head">
-              <button class="icon-btn" id="prev-month" aria-label="Bulan sebelumnya">&#8249;</button>
-              <h3 id="month-year" aria-live="polite"></h3>
-              <button class="icon-btn" id="next-month" aria-label="Bulan berikutnya">&#8250;</button>
-            </div>
-            <div class="cal-week" aria-hidden="true">
-              <span>Min</span><span>Sen</span><span>Sel</span><span>Rab</span><span>Kam</span><span>Jum</span><span>Sab</span>
-            </div>
-            <div class="cal-grid" id="days-grid"></div>
-            <ul class="legend">
-              <li><i class="dot dot-free"></i> Kosong</li>
-              <li><i class="dot dot-booked"></i> Ada booking</li>
-              <li><i class="dot dot-today"></i> Hari ini</li>
-            </ul>
-          </div>
-
-          <aside class="card day-detail" id="day-detail" aria-live="polite">
-            <h3>Detail tanggal</h3>
-            <p class="muted">Pilih tanggal di kalender untuk melihat layanan yang sudah dibooking.</p>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <!-- BOOKING -->
-    <section class="section" id="booking">
-      <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">Booking</p>
-          <h2>Pesan layanan Anda</h2>
-          <p>Isi formulir, lalu pesanan dikirim ke WhatsApp kami untuk konfirmasi tanggal dan penawaran.</p>
-        </header>
-
-        <div class="booking-layout">
-          <form class="card form" id="order-form" novalidate>
-            <div class="field-row">
-              <div class="field">
-                <label for="client-name">Nama lengkap</label>
-                <input type="text" id="client-name" autocomplete="name" required>
-              </div>
-              <div class="field">
-                <label for="client-phone">Nomor WhatsApp</label>
-                <input type="tel" id="client-phone" inputmode="tel" autocomplete="tel" placeholder="08xx-xxxx-xxxx" required>
-              </div>
-            </div>
-
-            <div class="field-row">
-              <div class="field">
-                <label for="event-type">Jenis acara</label>
-                <select id="event-type" required>
-                  <option value="" disabled selected>Pilih jenis acara</option>
-                  <option>Ulang Tahun</option>
-                  <option>Lamaran</option>
-                  <option>Lainnya</option>
-                </select>
-              </div>
-              <div class="field">
-                <label for="event-date">Tanggal acara</label>
-                <input type="date" id="event-date" required>
-                <small class="hint" id="date-hint"></small>
-              </div>
-            </div>
-
-            <fieldset class="field services-pick">
-              <legend>Pilih layanan</legend>
-              <div id="service-options"></div>
-            </fieldset>
-
-            <div class="field">
-              <label for="event-notes">Catatan tambahan <span class="muted">(opsional)</span></label>
-              <textarea id="event-notes" rows="4" placeholder="Lokasi, konsep acara, jumlah tamu, dan lainnya"></textarea>
-            </div>
-
-            <p class="form-error" id="form-error" role="alert" hidden></p>
-            <button type="submit" class="btn btn-primary btn-block">Kirim Pesanan via WhatsApp 💖</button>
-          </form>
-
-          <aside class="side">
-            <div class="card summary">
-              <h3>Ringkasan pesanan</h3>
-              <ul class="summary-list" id="summary-list">
-                <li class="muted">Belum ada layanan dipilih.</li>
-              </ul>
-              <dl class="summary-total">
-                <div><dt>Subtotal</dt><dd id="sum-subtotal">Rp0</dd></div>
-                <div class="discount" id="sum-discount-row" hidden><dt>Diskon promo 10%</dt><dd id="sum-discount">-Rp0</dd></div>
-                <div class="total"><dt>Estimasi total</dt><dd id="sum-total">Rp0</dd></div>
-              </dl>
-              <p class="fine" id="sum-note">Harga final dikonfirmasi admin. Layanan MC berstatus "mulai dari".</p>
-            </div>
-
-            <div class="card pay">
-              <h3>Informasi Pembayaran</h3>
-              <p>Pembayaran hanya dilakukan ke rekening atas nama:</p>
-              <p class="pay-name">Indah Robiah Rohmah</p>
-              <p class="pay-account" id="pay-account"></p>
-              <p class="warn">Pastikan nama penerima adalah <strong>Indah Robiah Rohmah</strong> sebelum melakukan transfer.</p>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <!-- ULASAN -->
-    <section class="section section-alt" id="ulasan">
-      <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">Ulasan Pelanggan</p>
-          <h2>Cerita dari pelanggan kami</h2>
-          <p>Sudah memakai layanan IRR? Bagikan pengalaman Anda untuk membantu calon pelanggan lain.</p>
-        </header>
-
-        <div class="reviews-layout">
-          <form class="card form" id="review-form" novalidate>
-            <h3>Tulis ulasan</h3>
-            <div class="field">
-              <label for="rv-name">Nama</label>
-              <input type="text" id="rv-name" maxlength="40" autocomplete="name" required>
-            </div>
-            <div class="field">
-              <label for="rv-service">Layanan yang dipakai</label>
-              <select id="rv-service" required></select>
-            </div>
-            <fieldset class="field">
-              <legend>Penilaian</legend>
-              <div class="stars-input" id="rv-stars">
-                <input type="radio" name="rating" id="st5" value="5"><label for="st5" title="5 bintang">&#9733;</label>
-                <input type="radio" name="rating" id="st4" value="4"><label for="st4" title="4 bintang">&#9733;</label>
-                <input type="radio" name="rating" id="st3" value="3"><label for="st3" title="3 bintang">&#9733;</label>
-                <input type="radio" name="rating" id="st2" value="2"><label for="st2" title="2 bintang">&#9733;</label>
-                <input type="radio" name="rating" id="st1" value="1"><label for="st1" title="1 bintang">&#9733;</label>
-              </div>
-            </fieldset>
-            <div class="field">
-              <label for="rv-text">Ulasan Anda</label>
-              <textarea id="rv-text" rows="4" maxlength="500" placeholder="Ceritakan pengalaman Anda" required></textarea>
-              <small class="hint"><span id="rv-count">0</span>/500</small>
-            </div>
-            <p class="form-error" id="rv-error" role="alert" hidden></p>
-            <button type="submit" class="btn btn-primary btn-block">Kirim Ulasan</button>
-          </form>
-
-          <div class="reviews-list">
-            <div class="rating-summary card" id="rating-summary" hidden>
-              <div class="avg" id="avg-score">0.0</div>
-              <div>
-                <div class="stars" id="avg-stars" aria-hidden="true"></div>
-                <small class="muted" id="avg-count"></small>
-              </div>
-            </div>
-            <div id="review-list" class="review-items"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- KONTAK -->
-    <section class="section" id="kontak">
-      <div class="container">
-        <div class="contact card">
-          <div>
-            <p class="eyebrow">Hubungi IRR Event Organizer</p>
-            <h2>Konsultasi &amp; cek tanggal</h2>
-            <p>Untuk konsultasi layanan, cek ketersediaan tanggal, mendapatkan penawaran, atau melakukan booking, silakan hubungi kami melalui WhatsApp.</p>
-          </div>
-          <a class="btn btn-primary" id="wa-link" href="#" target="_blank" rel="noopener">WhatsApp 0858-7629-3847</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div class="brand brand-footer">
-        <img src="images/logo.png" alt="">
-        <span>IRR <small>Event Organizer</small></span>
-      </div>
-      <p>Pembayaran hanya ke rekening a.n. <strong>Indah Robiah Rohmah</strong>.</p>
-      <p class="fine">&copy; <span id="year"></span> IRR Event Organizer. Hak cipta dilindungi.</p>
     </div>
-  </footer>
 
-  <script src="js/script.js"></script>
+  </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
 </body>
 </html>
